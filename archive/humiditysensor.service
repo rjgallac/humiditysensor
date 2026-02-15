@@ -1,0 +1,15 @@
+[Service]
+Type=simple
+User=rjgallac
+WorkingDirectory=/home/rjgallac/humiditysensor
+
+ExecStart=/home/rjgallac/humiditysensor/.venv/bin/python /home/rjgallac/humiditysensor/script.py
+
+Environment=TAPO_USERNAME=?????
+Environment=TAPO_PASSWORD=???????
+
+Restart=always
+RestartSec=10
+
+StandardOutput=journal
+StandardError=journal

@@ -1,0 +1,10 @@
+[Unit]
+Description=Humidity Plug Controller
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/rjgallac/plug_webhook.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
