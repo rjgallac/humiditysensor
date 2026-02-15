@@ -1,3 +1,8 @@
+# Humidity and Temperature sensor 
+
+
+![Grafana screenshot](/docs/grafana.png)
+
 pip install prometheus-client
 
 sudo nano /etc/systemd/system/
